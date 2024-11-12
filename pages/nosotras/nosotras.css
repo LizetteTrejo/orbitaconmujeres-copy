@@ -1,0 +1,271 @@
+:root {
+    /* color de fondo */
+    --body-bg-color: #f2f2f2;
+    /* cuadros de imput ,lenado de informacion */
+    --input-bg-color: rgba(255, 255, 255, 0.829);
+    /* caja de formulario de contacto */
+    --boxform-bg-color: #FFD169;
+    /* Barra de Navegación */
+    /* Color de barra de navegacion */
+    --navbar-bg-color: #eee9af;
+    /* texto en navegacion*/
+    --navText-color: black;
+    /* boton  en navegacion*/
+    --navBut-bg-color: white;
+    /* texto una vez realizado el hover en navegacion*/
+    --textWhite-color: white;
+    /* boton una vez realizado el hover en navegacion*/
+    --navHovBut-bg-color: #7a8937;
+    /* botones rosa */
+    --butPink-bg-color: #E54875;
+     /* Header*/
+     /* Fondo de título */
+    --header-bg-color: linear-gradient(180deg, rgba(33, 145, 117, 1) 0%, rgba(255, 228, 51, 1) 100%);
+    /* Header de pagina gradiente */
+    --headerPage-bg-color: linear-gradient(to bottom, #a8f57a, #f2f2f2);
+    /* Botón Publicar */
+    --pubBut-bg-color:#e7e7e7;
+    /* Gris oscuro */
+    --lineD-color:#ddd;
+    /* Tecxto de Usuario */
+    --textUsuario-color: #333;
+}
+
+body {
+    background-color:var(--body-bg-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** CSS HEADER *****/
+
+/***** TITULO *****/
+
+/* Estilos del contenedor*/
+.custom-container {
+    width: 100%;
+    padding: 35px 0;
+    margin: 80px auto !important; 
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.header-pagina {
+    background: var(--header-bg-color);
+    margin-bottom: 10px ;
+}
+/* Estilo del texto */
+.title {
+    font-size: 11em;
+    font-family: "Style Script", cursive;
+    color: var(--textWhite-color); 
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Posiciona las imágenes de flores en el header */
+
+.header-flowers img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 16em;
+    width: 16em;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    z-index: 1;
+}
+
+
+ /* =========== DESCRIPCION ---------- */
+ .title-description {
+    font-family: "Poppins", sans-serif;
+    margin-top: 0;
+    text-align: center;
+}
+
+ .descpripcion-pagina {
+    font-family: "Montserrat", sans-serif; 
+    font-size: 1.2rem; 
+    color: var(--textUsuario-color);
+    line-height: 1.6;  
+    text-align: justify;  
+    margin: 10px auto;  
+    margin-bottom: 30px;
+    padding: 15px 20px; 
+    background-color: #f9f9f9; 
+    border-left: 4px solid var(--navHovBut-bg-color); 
+    border-radius: 10px; 
+    max-width: 800px;  
+}
+
+/***** EMPIEZA CSS TARJETAS *****/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    min-height: 550px;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+/* Contenido completo de las tarjetas */
+.contenido-tarjeta {
+    margin-top: 20px;
+}
+
+.tarjeta_foto {
+    height: 150px;
+}
+
+/* Estilo para las fotos redondeadas */
+.tarjeta_foto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los nombres */
+.tarjeta_nombre {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: var(--navText-color);
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Botón de LinkedIn */
+.btn {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem; 
+    color: var(--navText-color);
+    background-color: #f1f1f1;
+    padding: 5px 10px; 
+    border-radius: 25px; 
+    transition: background-color 0.3s;
+    width: 80%; 
+    margin-top: 10%; 
+    width: 6em;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Descripción en las tarjetas */
+.tarjeta_descripcion {
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--navText-color);
+}
+
+/* Degradados tarjetas */
+.card-elisa {
+    background: linear-gradient(135deg, #c568f0, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-andrea {
+    background: linear-gradient(135deg, #e54875, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-azul {
+    background: linear-gradient(135deg, #006280, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-ivanna {
+    background: linear-gradient(135deg, #b15a8d, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-karen {
+    background: linear-gradient(135deg, #ff9233, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-liz {
+    background: linear-gradient(135deg, #ffd92f, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-vanessa {
+    background: linear-gradient(135deg, #bed83d, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-tibio {
+    background: linear-gradient(135deg, #219175, #ffffff);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+
+/* Hover Ilustraciones */
+
+.tarjeta_foto {
+    position: relative; /* Asegura que el contenedor tenga posición relativa */
+    height: 150px; /* Mantiene la altura para las imágenes */
+    width: 150px; /* Mantiene la anchura */
+    overflow: hidden; /* Asegura que nada se salga del contenedor */
+    margin: 0 auto; /* Centra el contenedor de la tarjeta */
+}
+
+.tarjeta_foto img {
+    position: absolute; /* Permite que las imágenes se superpongan */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el tamaño de las imágenes al 100% del contenedor */
+    height: 100%; /* Asegura que las imágenes llenen el contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+    border-radius: 50%; /* Imágenes redondeadas */
+}
+
+.tarjeta_foto .foto-hover {
+    display: none; /* Esconde la imagen hover por defecto */
+}
+
+.tarjeta_foto:hover .foto-normal {
+    display: none; /* Esconde la imagen normal al hacer hover */
+}
+
+.tarjeta_foto:hover .foto-hover {
+    display: block; /* Muestra la imagen hover al hacer hover */
+}

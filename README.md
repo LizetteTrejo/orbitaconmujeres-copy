@@ -17,4 +17,4 @@ Crear una plataforma digital segura y accesible, diseñada específicamente para
 - Sororidad
 
 
-#DEPLOY: https://orbita-con-mujeres.netlify.app/index.html
+# DEPLOY: https://orbita-con-mujeres.netlify.app/index.html
